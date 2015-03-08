@@ -1,0 +1,26 @@
+html {
+	background: black;
+	font-family: sans-serif;
+	color: white;
+}
+
+div {
+	display: inline-block;
+}
+
+.button {
+	width: 80px;
+	cursor: pointer;
+}
+
+#calc{
+	width: 400px;
+	height: 100px;
+	padding: 20px;
+	text-align:left;
+}
+
+#display{
+	width:300px;
+	color:#7FFF00;
+}
