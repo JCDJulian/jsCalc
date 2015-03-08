@@ -69,21 +69,21 @@ $("#clear").click(function () {
 
 
 function add(var1, var2) {
-    ans = (parseInt(var1) + parseInt(var2)).toString();
+    ans = (parseFloat(var1) + parseFloat(var2)).toString();
     return ans;
 }
 
 function multiply(var1, var2) {
-    ans = (parseInt(var1) * parseInt(var2)).toString();
+    ans = (parseFloat(var1) * parseFloat(var2)).toString();
     return ans;
 }
 
 function divide(var1, var2) {
-    ans = (parseInt(var1) / parseInt(var2)).toString();
+    ans = (parseFloat(var1) / parseFloat(var2)).toString();
     return ans;
 }
 
 function subtract(var1, var2) {
-    ans = (parseInt(var1) - parseInt(var2)).toString();
+    ans = (parseFloat(var1) - parseFloat(var2)).toString();
     return ans;
 }
