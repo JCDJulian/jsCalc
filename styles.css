@@ -4,23 +4,53 @@ html {
 	color: white;
 }
 
+.body{
+	font-size: 100%;
+}
+
+::selection {
+	background: black;
+}
+
+::-moz-selection{
+	background:black;
+}
+
 div {
 	display: inline-block;
 }
 
 .button {
+	font-size: 2em;
 	width: 80px;
+	height: 40px;
 	cursor: pointer;
+	border: gray double thin;
+	border-radius: 40px;
+	line-height: 40px;
+	margin-top: 2px;
+	margin-bottom: 2px;
 }
 
 #calc{
-	width: 400px;
-	height: 100px;
-	padding: 20px;
-	text-align:left;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	width:100%;
 }
 
 #display{
-	width:300px;
+	font-size: 3em;
+	width: 240px;
 	color:#7FFF00;
+	text-align: left;
+	margin-left:auto;
+	margin-right:auto;
+	word-wrap: break-word;
+}
+
+#clear {
+	padding-top: 10px;
+	font-size: 2em;
+	cursor: pointer;
 }

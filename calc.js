@@ -42,7 +42,7 @@ $("#equals").click(function () {
             //num2 = "";
             //operand = "";
             break;
-        case "*":
+        case "x":
             num1 = multiply(num1, num2);
             //num2 = "";
             //operand = "";
