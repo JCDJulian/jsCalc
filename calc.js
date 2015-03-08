@@ -1,11 +1,19 @@
 var num1 = "",
-num2 = "";
+num2 = "",
+ans = "";
 var operand = "";
 
 $(".num").click(function () {
     if(operand === ""){
-    	num1 = num1 + ($(this).text());
-    	alert(num1);
+    	if (ans === ""){
+	    	num1 = num1 + ($(this).text());
+	    	alert(num1);
+	    	}
+    	else {
+    		num1 = $(this).text();
+    		ans = "";
+    		alert(num1);
+    	}
     }
     else{
     	num2 = num2 + ($(this).text());
@@ -19,7 +27,7 @@ $(".operand").click(function () {
     });
 
 $("#equals").click(function () {
-	if (num2 = "")
+	if (num2 === "")
 		num2 = num1;
     switch (operand){
 	    case "+":
@@ -52,9 +60,8 @@ $("#equals").click(function () {
 });
 
 function add(var1, var2) {
-	var ans = parseInt(var1) + parseInt(var2);
-	ans = ans.toString();
-    return (ans);
+	ans = (parseInt(var1) + parseInt(var2)).toString();
+    return ans;
 }
 
 function multiply(var1, var2) {
